@@ -26,3 +26,15 @@ quartet %>%
 # 2 II            9    3.32      7.50    2.03       0.816
 # 3 III           9    3.32      7.5     2.03       0.816
 # 4 IV            9    3.32      7.50    2.03       0.817
+
+
+# Plot
+ggplot(quartet,aes(x,y)) + geom_point() + geom_smooth(method=lm, se=FALSE) + facet_wrap(~set)
+
+
+# the DatasauRus
+install.packages('datasauRus') 
+# run the code
+library('datasauRus') 
+
+ggplot(datasaurus_dozen,aes(x=x,y=y,colour=dataset))+geom_point()+theme_void()+theme(legend.position = "none")+facet_wrap(~dataset,ncol=3)
