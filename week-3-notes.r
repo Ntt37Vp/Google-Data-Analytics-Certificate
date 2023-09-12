@@ -38,3 +38,22 @@ install.packages('datasauRus')
 library('datasauRus') 
 
 ggplot(datasaurus_dozen,aes(x=x,y=y,colour=dataset))+geom_point()+theme_void()+theme(legend.position = "none")+facet_wrap(~dataset,ncol=3)
+
+
+## Week 3 Final Exam
+# 1 - Tibbles automatically only preview first 10 rows, Only previews as many columns as fit on screen
+# 2 - head()
+# 3 - using glimpse() to ToothGrowth dataset, how many diff data types? not 3.
+# 4 - rename_with(tolower, cars)
+# 5 - penguins %>%
+#   filter(species == "Gentoo")
+
+# 6 - penguins %>% 
+    # drop_na() %>%
+    # group_by(species) %>%
+# using summarize() and min() functions, find the min val for the var bill_depth_mm
+
+# 7 - mutate(salary_data, hourly_salary = wage / 40)
+# 8 - unite(weather, "display_temp", temp, unit, sep = " Degrees ")
+# 9 - Correlation is the statistical measure to show how strong the relationship is between vars
+# 10 - BIAS() fucnc shows the avg diff between ACTUAL and PREDICTED
