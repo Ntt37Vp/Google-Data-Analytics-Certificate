@@ -29,18 +29,38 @@ quartet %>%
 
 
 # Plot
-ggplot(quartet,aes(x,y)) + geom_point() + geom_smooth(method=lm, se=FALSE) + facet_wrap(~set)
+ggplot(quartet, aes(x, y)) +
+    geom_point() +
+    geom_smooth(method = lm, se = FALSE) +
+    facet_wrap(~set)
 
 
 # the DatasauRus
-install.packages('datasauRus') 
+install.packages("datasauRus")
 # run the code
-library('datasauRus') 
+library("datasauRus")
 
-ggplot(datasaurus_dozen,aes(x=x,y=y,colour=dataset))+geom_point()+theme_void()+theme(legend.position = "none")+facet_wrap(~dataset,ncol=3)
+ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset)) +
+    geom_point() +
+    theme_void() +
+    theme(legend.position = "none") +
+    facet_wrap(~dataset, ncol = 3)
+
+### Organizing Data ###
+# library(tidyverse)
+# head(penguins)
+# penguins %>% arrange(bill_length_mm)
+# penguins %>% arrange(-bill_length_mm)
+
+# penguins2 <- penguins %>% arrange(-bill_length_mm)
+# view(penguins2)
+# penguins %>% group_by(island) %>% drop_na() %>% summarize(min_bill_length = mean(bill_length_mm))
+# penguins %>% group_by(island) %>% drop_na() %>% summarize(max_bill_len = max(bill_length_mm))
+# penguins %>% filter(species == "Adelie")
 
 
-## Week 3 Final Exam
+
+##### Week 3 Final Exam #####
 # 1 - Tibbles automatically only preview first 10 rows, Only previews as many columns as fit on screen
 # 2 - head()
 # 3 - using glimpse() to ToothGrowth dataset, how many diff data types? not 3.
@@ -48,9 +68,9 @@ ggplot(datasaurus_dozen,aes(x=x,y=y,colour=dataset))+geom_point()+theme_void()+t
 # 5 - penguins %>%
 #   filter(species == "Gentoo")
 
-# 6 - penguins %>% 
-    # drop_na() %>%
-    # group_by(species) %>%
+# 6 - penguins %>%
+# drop_na() %>%
+# group_by(species) %>%
 # using summarize() and min() functions, find the min val for the var bill_depth_mm
 
 # 7 - mutate(salary_data, hourly_salary = wage / 40)
