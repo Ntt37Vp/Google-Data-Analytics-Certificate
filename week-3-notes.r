@@ -60,7 +60,7 @@ ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset)) +
 
 
 
-##### Week 3 Final Exam #####
+##### Week 3 Final Exam - Failed #####
 # 1 - Tibbles automatically only preview first 10 rows, Only previews as many columns as fit on screen
 # 2 - head()
 # 3 - using glimpse() to ToothGrowth dataset, how many diff data types? not 3.
@@ -77,3 +77,15 @@ ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset)) +
 # 8 - unite(weather, "display_temp", temp, unit, sep = " Degrees ")
 # 9 - Correlation is the statistical measure to show how strong the relationship is between vars
 # 10 - BIAS() fucnc shows the avg diff between ACTUAL and PREDICTED
+
+#### Week 4 Finals - PASSED! ###
+#1. Tibble - use instead of df to make it readable
+#2. str() ? - to view # of rows, var, type of data within a given col
+#3. 60 > glimpse(ToothGrowth)
+#4. rename() func >
+#5. filter(species == "Adelie")
+#6. 231 > summarize(max_length_mm = max(flipper_length_mm))
+#7. separate(athletes, record, into=c("wins”, “losses”), sep="-")
+#8. unite(customers, “phone_number”, area_code, phone_num, sep=”-”)
+#9. Std dev
+#10. bias()
