@@ -40,3 +40,26 @@
 # ggplot(data = diamonds) + geom_bar(mapping = aes(x=cut))
 # ggplot(data = diamonds) + geom_bar(mapping = aes(x=cut, color=cut))
 # ggplot(data = diamonds) + geom_bar(mapping = aes(x=cut, fill=cut))
+
+# Aesthetic and Facets
+# ggplot(data = penguins) + geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, color=species)) + facet_wrap(~species)
+# ggplot(data=diamonds) + geom_bar(mapping = aes(x=cut, fill=cut)) + facet_wrap(~cut)
+# ggplot(data = penguins) + geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, color=species)) + facet_grid(sex~species)
+# ggplot(data = penguins) + geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, color=species)) + facet_grid(~species)
+# ggplot(data = penguins) + geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, color=species)) + facet_grid(~sex)
+
+
+# Hands On Activity
+# Course 7 > Week 4 > Lesson 3 Aesthetics.rmd
+# hotel_bookings <- read.csv("hotel_bookings.csv")
+# read(hotel_bookings)
+# library(ggplot2)
+# ggplot(data = hotel_bookings) +
+#   geom_bar(mapping = aes(x = distribution_channel))
+
+# Practice Test
+# Aesthetic that contributes : size, color, shape
+# facet_wrap() lets you display smaller groups or subsets
+# In ggplot(data = hotel_bookings) +
+#   geom_bar(mapping = aes(x = distribution_channel)), the X is the "aesthetic" or the x axis
+# geom_jitter()
