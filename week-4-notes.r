@@ -63,3 +63,12 @@
 # In ggplot(data = hotel_bookings) +
 #   geom_bar(mapping = aes(x = distribution_channel)), the X is the "aesthetic" or the x axis
 # geom_jitter()
+
+
+### ANNOTATION LAYER ###
+# use the LABS() layer func
+# ggplot(data = penguins) +
+#     geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
+#     facet_grid(~sex) +
+#     labs(title = "Penguins: Body Mass vs Flipper Length", subtitle = "I'm a subtitle")+
+#      annotate("text", x = 220, y = 3500, label = "The Gentoos are the largest")
